@@ -1,7 +1,7 @@
 <!--
  * @description 消息卡片组件
 !-->
-<template>
+<!-- <template>
     <div class="card-container">
         <template v-for="(item, index) in list" :key="item.task + item.releaseTime">
             <ReleaseDisplay :info="item" :class="[hoverIndex === index ? 'tip' : '']" @click="jumpMateriel(item)"
@@ -54,4 +54,4 @@ function jumpMateriel(item: Info) {
         }
     }
 }
-</style>
+</style> -->

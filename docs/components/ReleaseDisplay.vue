@@ -1,7 +1,7 @@
 <!--
  * @description 用于展示上线的详细信息
 !-->
-<template>
+<!-- <template>
     <div class="card info custom-block">
         <div>task：{{ data.task }}</div>
         <div>发布人：{{ data.publisher }}</div>
@@ -58,4 +58,4 @@ const data = computed<Info | Record<string, unknown>>(() => {
         color: var(--vp-c-brand);
     }
 }
-</style>
+</style> -->
