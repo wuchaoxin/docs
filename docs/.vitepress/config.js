@@ -32,7 +32,7 @@ const frontendSidebar = [
 ]
 
 export default defineConfig({
-  outDir: '../public',
+  base: '',
   title: 'YM',
   description: '前端说明文档',
   lang: 'zh-CN',
