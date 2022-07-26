@@ -14,10 +14,13 @@ jobs:
         with:
           node-version: 16
           cache: yarn
-      - run: yarn install --frozen-lockfile
+      - run: npm ci
+
+      - name: Update
+        run: npm run update
 
       - name: Build
-        run: yarn docs:build
+        run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
