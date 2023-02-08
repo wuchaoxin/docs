@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/refresh@2x</title>
+    <g id="icon/refresh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="编组-2" transform="translate(5.000000, 3.500000)" stroke="#0078F5" stroke-width="1.4">
+            <g id="编组" transform="translate(6.533333, 2.556539)">
+                <path d="M0.933333333,12.5545725 C4.5415937,12.5545725 7.46666667,9.59467726 7.46666667,5.94346141 C7.46666667,3.33196126 5.97028699,1.07412 3.79782457,0" id="路径"></path>
+                <polyline id="路径" stroke-linejoin="round" points="1.86666667 14.4434614 0 12.5545725 1.86666667 10.6656836"></polyline>
+            </g>
+            <g id="编组" transform="translate(3.733333, 7.221731) scale(-1, -1) translate(-3.733333, -7.221731) ">
+                <path d="M0.933333333,12.5545725 C4.5415937,12.5545725 7.46666667,9.59467726 7.46666667,5.94346141 C7.46666667,3.33196126 5.97028699,1.07412 3.79782457,0" id="路径"></path>
+                <polyline id="路径" stroke-linejoin="round" points="1.86666667 14.4434614 0 12.5545725 1.86666667 10.6656836"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

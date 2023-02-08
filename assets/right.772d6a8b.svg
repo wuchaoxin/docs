@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/right</title>
+    <g id="icon/right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="40" height="40"></rect>
+        <path d="M22,26.5 L27.7360075,20.65 C28.0879975,20.2910149 28.0879975,19.7089851 27.7360075,19.35 L22,13.5 L22,13.5" id="路径" stroke="#0078F5" stroke-width="2" stroke-linecap="round"></path>
+        <path d="M12,26.5 L17.7360075,20.65 C18.0879975,20.2910149 18.0879975,19.7089851 17.7360075,19.35 L12,13.5 L12,13.5" id="路径备份" stroke-opacity="0.499129289" stroke="#0078F5" stroke-width="2" stroke-linecap="round"></path>
+    </g>
+</svg>
