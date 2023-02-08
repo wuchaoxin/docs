@@ -1,0 +1,69 @@
+/**
+ * @description 功能色
+ */
+
+// 主题色
+$blue: #0078f5;
+// 价格促销信息
+$red: #ff5243;
+$orange: #fc7135;
+// 订阅提示信息
+$yellow: hsl(44, 100%, 50%);
+// 儿童疫苗业务
+$green: #0cc785;
+$cyan: #00bbff;
+// 两癌筛查业务
+$purple: #9964f5;
+// 九价秒杀业务
+$pink: #fc6a9d;
+$grey: #dedfe0;
+$white: #fff;
+
+/**
+ * @description 中性色
+ */
+// 一级文本
+$text_1: #1a2129;
+// 二级文本
+$text_2: #54585c;
+// 三级文本
+$text_3: #898c8f;
+// 占位/缺省文字
+$text_occupy: #c8cacc;
+// 禁用文字
+$text_disable: #dedfe0;
+
+/**
+ * @description other
+ */
+// 分割线和描边
+$dividing_line: #ebebeb;
+// 阴影
+$shadow: rgba(0, 0, 0, 0.04);
+// 背景
+$background: #f7f8f9;
+
+/**
+  * @description 盒子阴影
+  */
+$box_shadow_1: 0px 2px 8px #ebebeb;
+$box_shadow_2: 0px 8px 20px #ebebeb;
+
+/**
+ * @description 字体
+ */
+$font_family_medium: PingFangSC-Medium, MiSans-Medium, system-ui, -apple-system, Helvetica, Arial, sans-serif;
+$font_family_regular: PingFangSC-Regular, MiSans-Regular, system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+// 特大标题
+$font_size_huge: 24px;
+// 大标题
+$font_size_big: 20px;
+// 小标题
+$font_size_sub: 16px;
+// 正文、说明
+$font_size_main: 14px;
+// 提示
+$font_size_hint: 12px;
+// 标签
+$font_size_label: 10px;

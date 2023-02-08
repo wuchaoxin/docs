@@ -1,0 +1,101 @@
+/**
+ * @description 动画相关，选择 Animista 动画库（https://animista.net/）
+ * 如果有修改，请不要直接修改代码防止影响其他地方，应当以参数传入为主
+ */
+
+// 动画目前等待大家一起指定规则
+
+// @mixin slide-top($time: 0.2s, $distance: 100px) {
+//   animation: slide-top $time cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+//   @keyframes slide-top {
+//     0% {
+//       transform: translateY($distance);
+//     }
+//     100% {
+//       transform: translateY(0);
+//     }
+//   }
+// }
+
+// @mixin slide-bottom($time: 0.2s, $distance: 100px) {
+//   animation: slide-bottom $time cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+//   @keyframes slide-bottom {
+//     0% {
+//       transform: translateY(0px);
+//     }
+//     100% {
+//       transform: translateY($distance);
+//     }
+//   }
+// }
+
+// @mixin rotate-center {
+//   animation: rotate-center 1s ease-in-out infinite both;
+
+//   @keyframes rotate-center {
+//     0% {
+//       transform: rotate(0);
+//     }
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+// }
+
+// @mixin fade-in($time: 0.3s) {
+//   animation: fade-in $time cubic-bezier(0.39, 0.575, 0.565, 1) both;
+//   @keyframes fade-in {
+//     0% {
+//       opacity: 0;
+//     }
+//     100% {
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// @mixin fade-out($time: 0.3s) {
+//   animation: fade-out $time ease-out both;
+//   @keyframes fade-out {
+//     0% {
+//       opacity: 1;
+//     }
+//     100% {
+//       opacity: 0;
+//     }
+//   }
+// }
+
+// @mixin shake-horizontal($time: 0.8s) {
+//   animation: shake-horizontal $time cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+//   @keyframes shake-horizontal {
+//     0%,
+//     100% {
+//       transform: translateX(0);
+//     }
+//     10%,
+//     30%,
+//     50%,
+//     70% {
+//       transform: translateX(-10px);
+//     }
+//     20%,
+//     40%,
+//     60% {
+//       transform: translateX(10px);
+//     }
+//     80% {
+//       transform: translateX(8px);
+//     }
+//     90% {
+//       transform: translateX(-8px);
+//     }
+//   }
+// }
+
+// @mixin transition-rotate($time: 0.3s, $deg: 180deg) {
+//   transition: all $time;
+//   &.rotate {
+//     transform: rotate($deg);
+//   }
+// }

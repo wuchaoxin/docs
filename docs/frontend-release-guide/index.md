@@ -1,25 +1,9 @@
 # 前端上线文档
 
-> vitePress 目前 ESM 打包有点问题，等待修复中
-
-<!-- <script setup>
-// 引入暗黑模式
-import 'element-plus/theme-chalk/dark/css-vars.css'
-import zhCn from 'element-plus/es/locale/lang/zh-cn'
-// 由于在 vitepress 里配置以及提示受限，这里手动按需引入 element 组件以及样式，并且不对组件做任何封装处理
-import 'element-plus/es/components/button/style/css'
-import 'element-plus/es/components/form/style/css'
-import 'element-plus/es/components/form-item/style/css'
-import 'element-plus/es/components/input/style/css'
-import 'element-plus/es/components/select/style/css'
-import 'element-plus/es/components/option/style/css'
-import 'element-plus/es/components/date-picker/style/css'
-import 'element-plus/es/components/config-provider/style/css'
-import 'element-plus/es/components/pagination/style/css'
+<script setup lang="ts">
 import { ElButton as Button, ElForm as Form, ElFormItem as FormItem,
          ElInput as Input, ElSelect as Select, ElOption as Option,
-         ElDatePicker as DatePicker, ElConfigProvider as ConfigProvider, 
-         ElPagination as Pagination} from 'element-plus'
+         ElDatePicker as DatePicker, ElPagination as Pagination} from 'element-plus'
 
 import ReleaseList from '../components/ReleaseList.vue'
 import { PUBLISHER_LIST, PLATFORM_LIST, releaseList } from './releaseList.ts'
@@ -116,45 +100,43 @@ function getTime(time){
 }
 </script>
 
-<div class="container">
-    <ConfigProvider :locale="zhCn">
-        <Form :inline="true" :model="formModel">
-            <FormItem label="task">
-                <Input v-model="formModel.task" placeholder="请输入 task 号" />
-            </FormItem>
-            <FormItem label="发布人">
-                <Select v-model="formModel.publisher" placeholder="请选择发布人">
-                    <Option v-for="item in PUBLISHER_LIST" :label="item" :value="item"></Option>
-                </Select>
-            </FormItem>
-            <FormItem label="发布平台">
-                <Select v-model="formModel.platform" placeholder="请选择发布平台">
-                    <Option v-for="item in PLATFORM_LIST" :label="item" :value="item"></Option>
-                </Select>
-            </FormItem>
-            <FormItem label="物料">
-                <Select v-model="formModel.haveMateriel" placeholder="是否有物料">
-                    <Option label="有" value="1"></Option>
-                    <Option label="没有" value="0"></Option>
-                </Select>
-            </FormItem>
-            <FormItem label="创建时间">
-                <DatePicker v-model="formModel.createTime" type="daterange" :shortcuts="shortcuts"
-                    start-placeholder="开始时间" end-placeholder="结束时间"></DatePicker>
-            </FormItem>
-            <FormItem label="发布时间">
-                <DatePicker v-model="formModel.releaseTime" type="daterange" :shortcuts="shortcuts"
-                    start-placeholder="开始时间" end-placeholder="结束时间"></DatePicker>
-            </FormItem>
-            <FormItem>
-                <Button @click="search">查询</Button>
-                <Button @click="reset">重置</Button>
-            </FormItem>
-        </Form>
-        <ReleaseList :list="list"></ReleaseList>
-        <Pagination layout="prev, pager, next" :total="filterList.length" :hideOnSinglePage="true"
+<div class="avoid-container">
+    <Form :inline="true" :model="formModel">
+        <FormItem label="task">
+            <Input v-model="formModel.task" placeholder="请输入 task 号" />
+        </FormItem>
+        <FormItem label="发布人">
+            <Select v-model="formModel.publisher" placeholder="请选择发布人">
+                <Option v-for="item in PUBLISHER_LIST" :label="item" :value="item"></Option>
+            </Select>
+        </FormItem>
+        <FormItem label="发布平台">
+            <Select v-model="formModel.platform" placeholder="请选择发布平台">
+                <Option v-for="item in PLATFORM_LIST" :label="item" :value="item"></Option>
+            </Select>
+        </FormItem>
+        <FormItem label="物料">
+            <Select v-model="formModel.haveMateriel" placeholder="是否有物料">
+                <Option label="有" value="1"></Option>
+                <Option label="没有" value="0"></Option>
+            </Select>
+        </FormItem>
+        <FormItem label="创建时间">
+            <DatePicker v-model="formModel.createTime" type="daterange" :shortcuts="shortcuts" start-placeholder="开始时间"
+                end-placeholder="结束时间"></DatePicker>
+        </FormItem>
+        <FormItem label="发布时间">
+            <DatePicker v-model="formModel.releaseTime" type="daterange" :shortcuts="shortcuts" start-placeholder="开始时间"
+                end-placeholder="结束时间"></DatePicker>
+        </FormItem>
+        <FormItem>
+            <Button @click="search">查询</Button>
+            <Button @click="reset">重置</Button>
+        </FormItem>
+    </Form>
+    <ReleaseList :list="list"></ReleaseList>
+    <Pagination layout="prev, pager, next" :total="filterList.length" :hideOnSinglePage="true"
         v-model:currentPage="currentPage" v-model:pageSize="pageSize"></Pagination>
-    </ConfigProvider>
 </div>
 
 <style>
@@ -167,7 +149,7 @@ function getTime(time){
     }
 </style>
 <style lang="scss" scoped>
-    .container {
+    .avoid-container {
         margin-top: 20px;
         :deep(.el-button){
             background-color: transparent;
@@ -184,4 +166,4 @@ function getTime(time){
             }
         }
     }
-</style> -->
+</style>

@@ -1,7 +1,7 @@
 <!--
  * @description 消息卡片组件
 !-->
-<!-- <template>
+<template>
     <div class="card-container">
         <template v-for="(item, index) in list" :key="item.task + item.releaseTime">
             <ReleaseDisplay :info="item" :class="[hoverIndex === index ? 'tip' : '']" @click="jumpMateriel(item)"
@@ -10,8 +10,8 @@
     </div>
 </template>
 <script setup lang="ts">
-import { Info } from '/frontend-release-guide/releaseList'
-import ReleaseDisplay from './ReleaseDisplay.vue'
+import { Info } from '@/frontend-release-guide/releaseList'
+import ReleaseDisplay from '@/components/ReleaseDisplay.vue'
 import { ref } from 'vue'
 import { useRouter } from 'vitepress'
 
@@ -27,7 +27,7 @@ function getKey(item: Info) {
     return item.task + time
 }
 
-function enter(index) {
+function enter(index:number) {
     hoverIndex.value = index
 }
 
@@ -54,4 +54,4 @@ function jumpMateriel(item: Info) {
         }
     }
 }
-</style> -->
+</style>

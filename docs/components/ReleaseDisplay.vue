@@ -1,7 +1,7 @@
 <!--
  * @description 用于展示上线的详细信息
 !-->
-<!-- <template>
+<template>
     <div class="card info custom-block">
         <div>task：{{ data.task }}</div>
         <div>发布人：{{ data.publisher }}</div>
@@ -19,15 +19,15 @@
 </template>
 <script setup lang="ts">
 import { computed, ref, onMounted } from 'vue'
-import { Info, releaseList } from '/frontend-release-guide/releaseList'
-import { getURLAndParams } from '/frontend-common/utils/url'
+import { Info, releaseList } from '@/frontend-release-guide/releaseList'
+import { getURLAndParams } from '@/frontend-common/utils/url'
 
 const props = defineProps<{
     info?: Info
     useKey?: boolean
 }>()
 
-const keyInfo = ref<Info | Record<string, unknown>>({})
+const keyInfo = ref<Info | Record<string, string | string[]>>({})
 
 onMounted(() => {
     const { params } = getURLAndParams()
@@ -43,7 +43,7 @@ onMounted(() => {
     }
 })
 
-const data = computed<Info | Record<string, unknown>>(() => {
+const data = computed<Info | Record<string, string | string[]>>(() => {
     if (props.useKey) {
         return keyInfo.value
     } else {
@@ -58,4 +58,4 @@ const data = computed<Info | Record<string, unknown>>(() => {
         color: var(--vp-c-brand);
     }
 }
-</style> -->
+</style>

@@ -1,0 +1,176 @@
+/**
+ * @description 请关注 common-class.ts 这个文件，两个文件为强关联
+ */
+@use './variable';
+
+$background_color_namespace: 'ym-background-color';
+$text_color_namespace: 'ym-text-color';
+$font_family_namespace: 'ym-font-family';
+$font_size_namespace: 'ym-font-size';
+
+$dialog_namespace: 'ym-dialog';
+$toast_namespace: 'ym-toast';
+
+// 背景色
+.#{$background_color_namespace}_blue {
+  background-color: variable.$blue !important;
+}
+.#{$background_color_namespace}_red {
+  background-color: variable.$red !important;
+}
+.#{$background_color_namespace}_orange {
+  background-color: variable.$orange !important;
+}
+.#{$background_color_namespace}_yellow {
+  background-color: variable.$yellow !important;
+}
+.#{$background_color_namespace}_green {
+  background-color: variable.$green !important;
+}
+.#{$background_color_namespace}_cyan {
+  background-color: variable.$cyan !important;
+}
+.#{$background_color_namespace}_purple {
+  background-color: variable.$purple !important;
+}
+.#{$background_color_namespace}_pink {
+  background-color: variable.$pink !important;
+}
+.#{$background_color_namespace}_white {
+  background-color: variable.$white !important;
+}
+.#{$background_color_namespace}_grey {
+  background-color: variable.$grey !important;
+}
+
+// 字体颜色
+.#{$text_color_namespace}_white {
+  // 默认颜色不需要 !important
+  color: variable.$white;
+}
+.#{$text_color_namespace}_red {
+  color: variable.$red !important;
+}
+.#{$text_color_namespace}_text-1 {
+  color: variable.$text_1 !important;
+}
+.#{$text_color_namespace}_text-2 {
+  color: variable.$text_2 !important;
+}
+.#{$text_color_namespace}_text-3 {
+  color: variable.$text_3 !important;
+}
+.#{$text_color_namespace}_text-occupy {
+  color: variable.$text_occupy !important;
+}
+.#{$text_color_namespace}_text-disable {
+  color: variable.$text_disable !important;
+}
+
+// 字体
+.#{$font_family_namespace}_medium {
+  font-family: variable.$font_family_medium !important;
+}
+.#{$font_family_namespace}_regular {
+  font-family: variable.$font_family_regular !important;
+}
+
+// 字体大小
+.#{font_size_namespace}_huge {
+  font-size: variable.$font_size_huge !important;
+}
+.#{font_size_namespace}_big {
+  font-size: variable.$font_size_big !important;
+}
+.#{font_size_namespace}_sub {
+  font-size: variable.$font_size_sub !important;
+}
+.#{font_size_namespace}_main {
+  font-size: variable.$font_size_main !important;
+}
+.#{font_size_namespace}_hint {
+  font-size: variable.$font_size_hint !important;
+}
+.#{font_size_namespace}_label {
+  font-size: variable.$font_size_label !important;
+}
+
+// dialog 需要的样式（PS：加入!important 是因为，防止 vant 样式放在后面造成样式覆盖失效）
+.#{$dialog_namespace} {
+  border-radius: 8px !important;
+  background: #ffffff !important;
+  .van-dialog__header {
+    padding-top: 24px !important;
+    font-family: PingFangSC-Medium !important;
+    font-size: 16px !important;
+    color: #1a2129 !important;
+    text-align: center !important;
+    line-height: 16px !important;
+    font-weight: 500 !important;
+  }
+  .van-dialog__content {
+    min-height: 22px !important;
+    .van-dialog__message {
+      max-height: 60vh !important;
+      height: 100% !important;
+      box-sizing: border-box !important;
+      padding: 24px 24px 16px 24px !important;
+      font-family: PingFangSC-Regular !important;
+      font-size: 14px !important;
+      color: #1a2129 !important;
+      line-height: 22px !important;
+      font-weight: 400 !important;
+      &.van-dialog__message--has-title {
+        padding-top: 8px !important;
+        margin-top: 8px !important;
+      }
+    }
+  }
+  .van-dialog__footer {
+    .van-button {
+      font-family: PingFangSC-Regular !important;
+      font-size: 16px !important;
+      text-align: center !important;
+      line-height: 16px !important;
+      font-weight: 400 !important;
+    }
+    .van-dialog__cancel {
+      color: #898c8f !important;
+    }
+    .van-dialog__confirm {
+      color: #0078f5 !important;
+    }
+    [class*='van-hairline']::after {
+      border-color: #ebebeb !important;
+    }
+  }
+}
+
+// toast 需要的样式
+.#{$toast_namespace} {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-radius: 4px !important;
+  padding: 16px 20px !important;
+  .van-toast__text {
+    font-family: PingFangSC-Regular !important;
+    font-size: 16px !important;
+    color: #ffffff !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+  }
+  &.left {
+    .van-toast__text {
+      text-align: left !important;
+    }
+  }
+  &.center {
+    .van-toast__text {
+      text-align: center !important;
+    }
+  }
+  &.right {
+    .van-toast__text {
+      text-align: right !important;
+    }
+  }
+}

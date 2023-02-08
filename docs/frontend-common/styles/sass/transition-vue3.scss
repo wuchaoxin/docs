@@ -1,0 +1,92 @@
+/**
+ * @description vue3 中过渡样式包（注意 vue3 中 class 名称有变化）
+ * 如果有修改，请不要直接修改代码防止影响其他地方
+ */
+
+ // 目前等待大家一起指定规则
+
+// // fade-in-linear
+// .fade-in-linear-enter-active,
+// .fade-in-linear-leave-active {
+//   transition: opacity 200ms linear;
+// }
+// .fade-in-linear-enter-from,
+// .fade-in-linear-leave-from,
+// .fade-in-linear-leave-active {
+//   opacity: 0;
+// }
+
+// // fade-in
+// .fade-in-enter-active,
+// .fade-in-leave-active {
+//   transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+// }
+// .fade-in-enter-from,
+// .fade-in-leave-active {
+//   opacity: 0;
+// }
+
+// // zoom-in-top
+// .zoom-in-top-enter-active,
+// .zoom-in-top-leave-active {
+//   opacity: 1;
+//   transform: scaleY(1);
+//   transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+//   transform-origin: center top;
+// }
+// .zoom-in-top-enter-from,
+// .zoom-in-top-leave-active {
+//   opacity: 0;
+//   transform: scaleY(0);
+// }
+
+// // zomm-in-center
+// .zoom-in-center-enter-active,
+// .zoom-in-center-leave-active {
+//   transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+// }
+// .zoom-in-center-enter-from,
+// .zoom-in-center-leave-active {
+//   opacity: 0;
+//   transform: scaleX(0);
+// }
+
+// // zoom-in-bottom
+// .zoom-in-bottom-enter-active,
+// .zoom-in-bottom-leave-active {
+//   opacity: 1;
+//   transform: scaleY(1);
+//   transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+//   transform-origin: center bottom;
+// }
+// .zoom-in-bottom-enter-from,
+// .zoom-in-bottom-leave-active {
+//   opacity: 0;
+//   transform: scaleY(0);
+// }
+
+// // slide-fade-left
+// .slide-fade-left-enter-active {
+//   transition: all 0.3s ease-out;
+// }
+// .slide-fade-left-leave-active {
+//   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+// }
+// .slide-fade-left-enter-from,
+// .slide-fade-left-leave-to {
+//   transform: translateX(20px);
+//   opacity: 0;
+// }
+
+// // slide-fade-right
+// .slide-fade-right-enter-active {
+//   transition: all 0.3s ease-out;
+// }
+// .slide-fade-right-leave-active {
+//   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+// }
+// .slide-fade-right-enter-from,
+// .slide-fade-right-leave-to {
+//   transform: translateX(-20px);
+//   opacity: 0;
+// }

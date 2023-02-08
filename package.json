@@ -1,5 +1,5 @@
 {
-  "name": "vitepress",
+  "name": "docs",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -13,12 +13,30 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
-  "dependencies": {
-    "element-plus": "^2.2.9"
-  },
   "devDependencies": {
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "@our-patches/postcss-px-to-viewport": "^1.2.0",
+    "@tinymce/tinymce-vue": "^5.0.0",
+    "@types/dropzone": "^5.7.4",
+    "@types/node": "^18.11.12",
+    "axios": "^1.2.1",
+    "cos-js-sdk-v5": "^1.4.15-beta.0",
+    "crypto-js": "^4.1.1",
+    "dropzone": "^6.0.0-beta.2",
+    "element-plus": "^2.2.9",
+    "flexsearch": "^0.7.31",
+    "js-cookie": "^3.0.1",
+    "markdown-it": "^13.0.1",
+    "mermaid": "9.1.7",
+    "nprogress": "^0.2.0",
+    "qs": "^6.11.0",
     "sass": "^1.53.0",
-    "vitepress": "^1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "tinymce": "^6.2.0",
+    "vant": "^3.6.2",
+    "vitepress": "^1.0.0-alpha.43",
+    "vitepress-plugin-mermaid": "^2.0.10",
+    "vitepress-plugin-search": "^1.0.4-alpha.19",
+    "vue": "^3.2.37",
+    "vue-cropper": "^1.0.5"
   }
 }

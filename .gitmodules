@@ -1,3 +1,0 @@
-[submodule "docs/frontend-common"]
-	path = docs/frontend-common
-	url = http://gitlab.healthych.com/front/frontend-common.git

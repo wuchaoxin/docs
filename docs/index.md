@@ -5,6 +5,9 @@ hero:
   name: 前端管理文档
   text: UI & 组件 & 工具 
   tagline: 🎉更快、更好、更有效率🎉
+  image:
+    src: /images/fun/js.jpeg
+    alt: VitePress
   actions:
     - theme: brand
       text: 开始使用
