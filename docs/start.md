@@ -15,9 +15,7 @@
 
 ## RELEASE
 
-目前的部署流程，打算通过 `git` 固定的分支(`master`)的 `hook` 去触发 `Jenkins` 发布（当前 push 之前你应该先去拉 `submodule` 一次）。
-
-> 从很大程度已经降低维护的心智负担。流程：拉取 `submodule` -> `git push` -> `Jenkins` 自动发布。
+TODO
 
 ## DESIGN
 
