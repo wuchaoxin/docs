@@ -1,1 +1,0 @@
-import{d as e,c as t,o as a}from"./app.3d9ab6db.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ui-guide/mobile-show.md","lastUpdated":1675835613000}'),o={name:"ui-guide/mobile-show.md"},c=e({...o,setup(s){return(r,i)=>(a(),t("div"))}});export{d as __pageData,c as default};
