@@ -7,6 +7,7 @@ const LINK = 'https://github.com/wuchaoxin/docs'
 
 export default withMermaid(
   defineConfig({
+    base: '/docs/',
     appearance: 'dark',
     // outDir: '../dist',
     title: 'docs',
